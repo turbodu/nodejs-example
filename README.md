@@ -7,23 +7,13 @@ on OpenShift.
 Running on OpenShift
 ----------------------------
 
-Create an account at http://openshift.redhat.com/
+Create an account at http://www.openshift.com/
 
 Create a nodejs-0.6 application (you can call your application whatever you want)
 
-    rhc app create -a nodejs -t nodejs-0.6
-
-Add this upstream repo
-
-    cd nodejs
-    git remote add upstream -m master git://github.com/openshift/nodejs-example.git
-    git pull -s recursive -X theirs upstream master
-    # note that the git pull above can be used later to pull updates
-Then push the repo upstream
-
-    git push
+    rhc create-app mynodejs nodejs-0.6 --from-code=https://github.com/openshift/nodejs-example.git
 
 That's it, you can now checkout your application at:
 
-    http://nodejs-$yournamespace.rhcloud.com
+    http://mynodejs-$yournamespace.rhcloud.com
 
