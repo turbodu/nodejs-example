@@ -7,7 +7,7 @@ on OpenShift.
 Running on OpenShift
 ----------------------------
 
-Create an account at http://openshift.redhat.com/
+Create an account at https://www.openshift.com
 
 Create a nodejs-0.6 application (you can call your application whatever you want)
 
