@@ -11,7 +11,7 @@ Create an account at http://www.openshift.com/
 
 Create a nodejs-0.6 application (you can call your application whatever you want)
 
-    rhc app create mynodejs nodejs-0.6 --from-code=https://github.com/openshift/nodejs-example.git
+    rhc app create mynodejs nodejs-0.6 --from-code=https://github.com/openshift-quickstart/nodejs-example.git
 
 That's it, you can now checkout your application at:
 
